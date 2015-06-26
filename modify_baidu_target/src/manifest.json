@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Modify_Baidu_target",
+	"description": "在当前页进行搜索。  By: zhighest",
+	"version": "1.0",
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*"
+	],
+	"icons":{"128":"baidu_logo.png"},
+	"content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["modify_baidu.js"]
+    }
+  ]
+
+}
